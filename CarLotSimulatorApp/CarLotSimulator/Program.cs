@@ -53,6 +53,8 @@ namespace CarLotSimulator
         }
         public static void CarDetails(IEnumerable<Car>cars)
         {
+            Console.WriteLine($" number of cars created {CarLot.numberOfCars}");
+
             foreach (var car in cars)
             {
                 Console.WriteLine($"we have car thats is {car.Make} {car.Year} {car.Model} {car.EngineNoise}");
